@@ -1,32 +1,16 @@
 @font-face {
-  font-family: "BreeSerif";
+  font-family: "Ivy Mode";
   font-display: swap;
-  src: url("../fonts/BreeSerif-Regular.woff") format("woff"), url("../fonts/BreeSerif.woff2") format("woff2");
+  src: url("../fonts/IvyMode-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Lato";
+  font-family: "Ivy Mode";
   font-display: swap;
-  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato.woff2") format("woff2");
+  src: url("../fonts/IvyMode-Bold.otf") format("opentype");
   font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-display: swap;
-  src: url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-display: swap;
-  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato.woff2") format("woff2");
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -89,8 +73,8 @@
   -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
-  -o-object-position: 100% 2%;
-  object-position: 100% 2%;
+  -o-object-position: center;
+  object-position: center;
 }
 
 .content {
@@ -168,14 +152,14 @@
   margin-bottom: 87px;
 }
 
-.item:nth-child(2) {
+.item:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
-.item:nth-child(2) .item__info {
+.item:nth-child(2n) .item__info {
   margin-right: 60px;
   margin-left: 0;
 }
@@ -235,20 +219,20 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "BreeSerif", sans-serif;
+  font-family: "Ivy Mode", sans-serif;
   font-size: 46px;
   line-height: 100%;
   margin-bottom: 8px;
-  color: #f8e38e;
+  color: #505050;
 }
 
 .item__title {
-  font-family: "BreeSerif", sans-serif;
+  font-family: "Ivy Mode", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 100%;
   margin-bottom: 20px;
-  color: #f8e38e;
+  /* color: #f8e38e; */
 }
 
 .item__text {
@@ -303,7 +287,7 @@
 }
 
 .shop__rating span {
-  color: #f8f3ec;
+  color: #f8e38e;
   font-size: 23px;
 }
 
@@ -335,7 +319,7 @@
 }
 
 .shop__item-title {
-  font-family: "BreeSerif", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 100%;
@@ -478,7 +462,7 @@
 }
 
 .bottom-item__title {
-  font-family: "BreeSerif", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 100%;
 }
@@ -507,11 +491,10 @@
 
 .footer__links span {
   padding: 0 10px;
-  color: #fff;
 }
 
 .footer__link {
-  color: #fff;
+  color: #000;
   font-size: 14px;
   line-height: 100%;
 }
@@ -521,9 +504,9 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: #1C1D1D;
+  color: #1c1d1d;
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
@@ -550,14 +533,13 @@ a {
 }
 
 .btn {
-  font-family: Lato;
   font-weight: 500;
   line-height: 100%;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #f8e38e;
-  color:#1C1D1D;
+  color: #1c1d1d;
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
@@ -571,16 +553,16 @@ a {
 }
 
 .title {
-  font-family: "BreeSerif", sans-serif;
+  font-family: "Ivy Mode", sans-serif;
   font-weight: normal;
   font-size: 54px;
   line-height: 100%;
   text-align: center;
-  color: #f8e38e;
+  /* color: #f8e38e; */
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 140%;
   text-align: center;
 }
@@ -627,9 +609,7 @@ a {
     font-size: 32px;
   }
 
-
   .shop__body {
-
     margin-bottom: 50px;
   }
 
@@ -640,7 +620,7 @@ a {
 
 @media (max-width: 1100px) {
   .bottom-item__title {
-    font-family: "BreeSerif", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 100%;
   }
@@ -650,7 +630,6 @@ a {
   }
 
   .bottom-item {
-
     padding: 0 4px;
   }
 }
@@ -706,7 +685,6 @@ a {
     justify-content: space-around;
   }
 
-
   .bottom-item {
     width: 100%;
     justify-content: center;
@@ -736,7 +714,7 @@ a {
   }
 
   .item__text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28.8px;
   }
 }
@@ -751,20 +729,20 @@ a {
     width: 380px;
   }
 
-  .item:nth-child(2) {
+  .item:nth-child(2n) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  .item:nth-child(2) .item__info {
+  .item:nth-child(2n) .item__info {
     margin: 0;
   }
 
   .item__img {
     margin-bottom: 40px;
     width: 360px;
-    height: 200px;
+    height: 275px;
   }
 
   .item__img::after {
@@ -825,7 +803,7 @@ a {
   }
 
   .subtitle {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28.8px;
   }
 
@@ -887,8 +865,8 @@ a {
   }
 
   .header__bg img {
-    -o-object-position: 100% 85%;
-    object-position: 100% 85%;
+    -o-object-position: center;
+    object-position: center;
   }
 
   .content__body {
@@ -903,18 +881,15 @@ a {
     font-size: 24px;
   }
 
-
-
-
-  .price-block__text {}
+  .price-block__text {
+  }
 
   .bottom-item__img img {
     width: 40px;
   }
 
-  .title {}
-
-
+  .title {
+  }
 }
 
 @media (max-width: 439px) {
@@ -927,7 +902,7 @@ a {
 
   .item__img {
     width: 260px;
-    height: 150px;
+    height: 200px;
   }
 
   .item__img::after {
@@ -955,100 +930,85 @@ a {
   }
 }
 
-@supports (-webkit-appearance:none) {
+@supports (-webkit-appearance: none) {
   .content {
-    background-image: url("../img/svg/header-svg.svg")
+    background-image: url("../img/svg/header-svg.svg");
   }
 }
 
 @media (max-width: 1440px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 1404px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 1270px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 1210px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 1160px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 1025px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 999px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 955px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 830px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 769px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 600px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 530px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 441px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 439px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 @media (max-width: 376px) {
-
-  @supports (-webkit-appearance:none) {}
-
+  @supports (-webkit-appearance: none) {
+  }
 }
 
 /* beg Popups Lilo */
@@ -1149,7 +1109,7 @@ a {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   width: 100%;
 }
 
@@ -1211,10 +1171,10 @@ a {
   font-weight: normal;
   font-size: 11px;
   line-height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.gift_modal_2 .form form>div>div:first-child input {
+.gift_modal_2 .form form > div > div:first-child input {
   margin-bottom: 10px !important;
   height: 58px !important;
   align-items: flex-start;
@@ -1272,7 +1232,7 @@ a {
     line-height: 24px;
   }
 
-  .gift_modal_2 .form form>div>div:first-child input {
+  .gift_modal_2 .form form > div > div:first-child input {
     height: 40px !important;
   }
 }
@@ -1285,3 +1245,20 @@ a {
 }
 
 /* end Popups Lilo */
+.product-description-valueprops {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.valueprop-content {
+  text-align: center;
+  font-size: 12px;
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.valueprop-content img {
+  width: 90px;
+  height: auto;
+  margin: 0 auto;
+}
