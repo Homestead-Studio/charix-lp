@@ -248,6 +248,17 @@
   text-decoration: underline;
 }
 
+.reviews-text p {
+  font-style: italic;
+}
+
+.reviews-text span {
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  margin-top: 5px;
+}
+
 .bottom-line__container {
   padding: 70px 0;
   background-color: #f4f2f7;
@@ -1248,6 +1259,7 @@ a {
 .product-description-valueprops {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 1rem;
 }
 .valueprop-content {
   text-align: center;
