@@ -164,6 +164,11 @@
   margin-left: 0;
 }
 
+.item__column {
+  display: flex;
+  align-items: center;
+}
+
 .item__img {
   position: relative;
   z-index: 5;
