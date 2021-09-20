@@ -86,7 +86,7 @@
 .content {
   position: relative;
   margin-top: -115px;
-  background-image: url("../img/svg/header-svg.svg");
+  /* background-image: url("../img/svg/header-svg.svg"); */
   background-repeat: repeat-x;
   background-position-y: 2px;
 }
@@ -970,7 +970,7 @@ a {
 
 @supports (-webkit-appearance: none) {
   .content {
-    background-image: url("../img/svg/header-svg.svg");
+    /* background-image: url("../img/svg/header-svg.svg"); */
   }
 }
 
