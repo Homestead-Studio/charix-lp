@@ -997,7 +997,7 @@ select::-ms-expand { display: none; }
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #F8F3EC;
+  background: #f9f9f9;
   padding: 62px 30px;
 }
 
