@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/lp-womens-10-dollars-off"
+  to = "/lp-3-womens-holiday"
+  status = 301
+  force = true
