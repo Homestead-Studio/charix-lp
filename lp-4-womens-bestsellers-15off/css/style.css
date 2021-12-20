@@ -782,6 +782,7 @@ select::-ms-expand {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  object-position: bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
