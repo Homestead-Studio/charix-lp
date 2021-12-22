@@ -15,8 +15,8 @@ var app = new Vue({
         {
           name: "Camel",
           img: "img/svg/colors/01.svg",
-          oldPrice: 165,
-          newPrice: 132,
+          oldPrice: 175,
+          newPrice: 145,
           sizes: [
             {
               name: "Select a size",
@@ -106,8 +106,8 @@ var app = new Vue({
         },
         {
           name: "Black",
-          oldPrice: 165,
-          newPrice: 132,
+          oldPrice: 175,
+          newPrice: 145,
           img: "img/svg/colors/02.svg",
           sizes: [
             {
@@ -198,8 +198,8 @@ var app = new Vue({
         },
         {
           name: "Dark Navy",
-          oldPrice: 165,
-          newPrice: 132,
+          oldPrice: 175,
+          newPrice: 145,
           img: "img/svg/colors/03.svg",
           sizes: [
             {
@@ -290,8 +290,8 @@ var app = new Vue({
         },
         {
           name: "Ultimate Gray",
-          oldPrice: 165,
-          newPrice: 132,
+          oldPrice: 175,
+          newPrice: 145,
           img: "img/svg/colors/04.svg",
           sizes: [
             {
@@ -382,8 +382,8 @@ var app = new Vue({
         },
         {
           name: "Graphite",
-          oldPrice: 165,
-          newPrice: 132,
+          oldPrice: 175,
+          newPrice: 145,
           img: "img/svg/colors/05.svg",
           sizes: [
             {
@@ -474,8 +474,8 @@ var app = new Vue({
         },
         {
           name: "Camel / Black",
-          oldPrice: 165,
-          newPrice: 132,
+          oldPrice: 175,
+          newPrice: 145,
           img: "img/svg/colors/06.svg",
           sizes: [
             {
@@ -566,8 +566,8 @@ var app = new Vue({
         },
         {
           name: "Bordeaux",
-          oldPrice: 165,
-          newPrice: 132,
+          oldPrice: 175,
+          newPrice: 145,
           img: "img/svg/colors/07.svg",
           sizes: [
             {
@@ -658,8 +658,8 @@ var app = new Vue({
         },
         {
           name: "Safari",
-          oldPrice: 165,
-          newPrice: 132,
+          oldPrice: 175,
+          newPrice: 145,
           img: "img/svg/colors/08.svg",
           sizes: [
             {
