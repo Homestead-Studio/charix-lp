@@ -1220,7 +1220,7 @@ a {
   word-break: break-word;
   width: 100%;
 }
-
+ 
 @media (max-width: 600px) {
   .modal_inner {
     height: 276px;
