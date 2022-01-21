@@ -593,16 +593,6 @@ select::-ms-expand {
   box-shadow: inset 0px 0px 0px 1px #000;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 600px;
-}
-
 .header__top {
   background: #f8f3ec;
   display: -webkit-box;
@@ -671,7 +661,7 @@ select::-ms-expand {
   color: #ffffff;
   background: #000000;
   border: 1px solid #000000;
-  max-width: 164px;
+  max-width: 123px;
   width: 100%;
   height: 24px;
   -webkit-transition: all 0.3s ease 0s;
@@ -870,7 +860,7 @@ select::-ms-expand {
 }
 
 .footer {
-  background: #f8f3ec;
+  background: #e7e2da;
   padding: 46px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1610,20 +1600,6 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 970px) {
-  .header {
-    height: 500px;
-  }
-
-  .header__logo {
-    margin: 40px 0;
-  }
-
-  .header__title {
-    font-size: 50px;
-  }
-}
-
 @media (max-width: 930px) {
   .reviews__body {
     -webkit-box-orient: vertical;
@@ -1675,19 +1651,6 @@ input[type="number"] {
 
   .shop2 {
     padding: 50px 30px;
-  }
-
-  .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .header__top-empty {
@@ -1777,10 +1740,9 @@ input[type="number"] {
   }
 
   tr {
-    grid-template-columns: minmax(180px, 1fr) minmax(100px, 1fr) minmax(
-        100px,
-        1fr
-      ) minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-columns:
+      minmax(180px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)
+      minmax(100px, 1fr) minmax(100px, 1fr);
   }
 
   td img {
@@ -2032,10 +1994,9 @@ input[type="number"] {
   }
 
   tr {
-    grid-template-columns: minmax(150px, 1fr) minmax(70px, 1fr) minmax(
-        70px,
-        1fr
-      ) minmax(70px, 1fr) minmax(70px, 1fr);
+    grid-template-columns:
+      minmax(150px, 1fr) minmax(70px, 1fr) minmax(70px, 1fr)
+      minmax(70px, 1fr) minmax(70px, 1fr);
   }
 
   .table {
@@ -2166,7 +2127,7 @@ input[type="number"] {
 
 .content {
   position: relative;
-  margin-top: -115px;
+  padding-top: 2rem;
   /* background-image: url("../img/svg/header-svg.svg"); */
   background-repeat: repeat-x;
   background-position-y: 2px;
@@ -2205,17 +2166,17 @@ input[type="number"] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 173px 0 27px 0;
 }
 
 .content__title {
   margin-bottom: 20px;
   font-family: "IvyMode", sans-serif;
+  text-align: center;
 }
 
 .content__subtitle {
   max-width: 954px;
-  margin-bottom: 62px;
+  text-align: center;
 }
 
 .subtitle p:first-child {
@@ -2375,6 +2336,9 @@ input[type="number"] {
   text-decoration: underline;
 }
 
+.title {
+  font-size: 46px;
+}
 
 @media (max-width: 1440px) {
   .container {
@@ -2595,10 +2559,6 @@ input[type="number"] {
     background-position: 0% 66px;
   }
 
-  .content__body {
-    padding: 175px 0 27px 0;
-  }
-
   .shop {
     padding: 70px 0 40px 0;
   }
@@ -2651,62 +2611,6 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 441px) {
-  .header__container {
-    padding: 0 16px !important;
-  }
-
-  .header__body {
-    padding: 11px 0;
-  }
-
-  .header__logo img {
-    width: 120px;
-  }
-
-  .header__link {
-    font-size: 12px;
-    padding: 0.91em 2.66em;
-  }
-
-  .header__bg {
-    min-height: 260px;
-  }
-
-  .header__bg img {
-    -o-object-position: center;
-    object-position: center;
-  }
-
-  .header__offer {
-    font-size: 12px;
-    width: 125px;
-    text-align: center;
-  }
-
-  .content__body {
-    padding: 126px 0 27px 0;
-  }
-
-  .shop {
-    padding: 50px 30px;
-  }
-
-  .shop__item-title {
-    font-size: 24px;
-  }
-
-  .price-block__text {
-  }
-
-  .bottom-item__img img {
-    width: 40px;
-  }
-
-  .title {
-  }
-}
-
 @media (max-width: 439px) {
   .item {
     -webkit-box-pack: center;
@@ -2742,5 +2646,133 @@ input[type="number"] {
 
   .container {
     padding: 0 15px;
+  }
+}
+
+.header {
+  background-color: #f8f3ec;
+}
+
+.header__container {
+  position: relative;
+}
+
+.sticky_header {
+  position: sticky;
+  width: 100%;
+  background-color: #f8f3ec;
+  top: 0;
+  z-index: 9999;
+}
+
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__link {
+  padding: 0.61em 3em;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.header__bg {
+  width: 100%;
+  min-height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.header__offer {
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.cta-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 441px) {
+  .header__container {
+    padding: 0 16px !important;
+  }
+
+  .header__body {
+    padding: 11px 0;
+  }
+
+  .header__logo img {
+    width: 120px;
+  }
+
+  .header__link {
+    font-size: 12px;
+    padding: 0.91em 2.66em;
+  }
+
+  .header__bg {
+    min-height: 260px;
+  }
+
+  .header__bg img {
+    -o-object-position: center;
+    object-position: center;
+  }
+
+  .header__offer {
+    font-size: 12px;
+    width: 125px;
+    text-align: center;
+  }
+
+  .shop {
+    padding: 50px 30px;
+  }
+
+  .shop__item-title {
+    font-size: 24px;
+  }
+
+  .price-block__text {
+  }
+
+  .bottom-item__img img {
+    width: 40px;
+  }
+
+  .title {
+    font-size: 38px;
   }
 }
