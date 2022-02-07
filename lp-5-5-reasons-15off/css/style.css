@@ -595,6 +595,7 @@ select::-ms-expand {
 
 .header__top {
   background: #f8f3ec;
+  border-bottom: 1px solid #161616;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1883,7 +1884,7 @@ input[type="number"] {
 
 @media (max-width: 390px) {
   .header__top-text {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .header__top-btn {
@@ -2128,9 +2129,8 @@ input[type="number"] {
 .content {
   position: relative;
   padding-top: 2rem;
-  /* background-image: url("../img/svg/header-svg.svg"); */
-  background-repeat: repeat-x;
-  background-position-y: 2px;
+
+  background: #f8f3ec;
 }
 
 .content__bg {
@@ -2177,6 +2177,7 @@ input[type="number"] {
 .content__subtitle {
   max-width: 954px;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .subtitle p:first-child {
@@ -2774,5 +2775,48 @@ input[type="number"] {
 
   .title {
     font-size: 38px;
+  }
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar__logo {
+  padding: 10px;
+}
+
+.navbar__logo img {
+  width: 160px;
+  height: auto;
+}
+
+.navbar__items {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.navbar__items ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__items li {
+  padding: 0 1rem;
+}
+
+.navbar__items li a {
+  color: #000;
+}
+
+@media (max-width: 459px) {
+  .navbar__items li {
+    padding: 0 7px;
+    font-size: 0.8rem;
+  }
+  .navbar__logo img {
+    width: 110px;
   }
 }
