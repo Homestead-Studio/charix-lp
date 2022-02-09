@@ -16,7 +16,7 @@ var app = new Vue({
           name: "Camel",
           img: "img/svg/colors/01.svg",
           oldPrice: 175,
-          newPrice: 145,
+          newPrice: 160,
           sizes: [
             {
               name: "Select a size",
@@ -107,7 +107,7 @@ var app = new Vue({
         {
           name: "Black",
           oldPrice: 175,
-          newPrice: 145,
+          newPrice: 160,
           img: "img/svg/colors/02.svg",
           sizes: [
             {
@@ -199,7 +199,7 @@ var app = new Vue({
         {
           name: "Dark Navy",
           oldPrice: 175,
-          newPrice: 145,
+          newPrice: 160,
           img: "img/svg/colors/03.svg",
           sizes: [
             {
@@ -291,7 +291,7 @@ var app = new Vue({
         {
           name: "Ultimate Gray",
           oldPrice: 175,
-          newPrice: 145,
+          newPrice: 160,
           img: "img/svg/colors/04.svg",
           sizes: [
             {
@@ -383,7 +383,7 @@ var app = new Vue({
         {
           name: "Graphite",
           oldPrice: 175,
-          newPrice: 145,
+          newPrice: 160,
           img: "img/svg/colors/05.svg",
           sizes: [
             {
@@ -475,7 +475,7 @@ var app = new Vue({
         {
           name: "Camel / Black",
           oldPrice: 175,
-          newPrice: 145,
+          newPrice: 160,
           img: "img/svg/colors/06.svg",
           sizes: [
             {
@@ -567,7 +567,7 @@ var app = new Vue({
         {
           name: "Bordeaux",
           oldPrice: 175,
-          newPrice: 145,
+          newPrice: 160,
           img: "img/svg/colors/07.svg",
           sizes: [
             {
@@ -659,7 +659,7 @@ var app = new Vue({
         {
           name: "Safari",
           oldPrice: 175,
-          newPrice: 145,
+          newPrice: 160,
           img: "img/svg/colors/08.svg",
           sizes: [
             {
@@ -767,7 +767,7 @@ var app = new Vue({
       var size = this.pickedSize.id;
       var qty = this.qty; // console.log(size);
 
-      window.open(url + size + ":" + qty + "?discount=HOLIDAY20", "_self");
+      window.open(url + size + ":" + qty + "?discount=WELCOME15", "_self");
     },
     changeSlider: function changeSlider() {
       if (this.pickedColor.name === "Camel") {
