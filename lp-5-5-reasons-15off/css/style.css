@@ -2829,6 +2829,11 @@ input[type="number"] {
     ),
     url("../img/charix-spring-hero.jpg");
   background-size: cover;
+  background-position-y: 45%;
+}
+
+.content__body h1.content__title {
+  margin: 8rem auto;
 }
 @media (max-width: 700px) {
   #five-reasons {
@@ -2839,5 +2844,9 @@ input[type="number"] {
       ),
       url("../img/charix-spring-hero-mobile.jpg");
     background-position-x: 70%;
+    background-position-y: 55%;
+  }
+  .content__body h1.content__title {
+    margin: 5rem auto;
   }
 }
