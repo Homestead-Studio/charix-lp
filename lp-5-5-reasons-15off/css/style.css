@@ -2832,8 +2832,8 @@ input[type="number"] {
   background-position-y: 45%;
 }
 
-.content__body h1.hero__title {
-  margin: 8rem auto;
+.content__body {
+  padding: 5rem 0;
 }
 @media (max-width: 700px) {
   #five-reasons {
@@ -2846,7 +2846,7 @@ input[type="number"] {
     background-position-x: 70%;
     background-position-y: 55%;
   }
-  .content__body h1.hero__title {
-    margin: 5rem auto;
+  .content__body {
+    padding: 1rem 0;
   }
 }
